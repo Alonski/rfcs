@@ -28,7 +28,7 @@ Having query params accessible on the router service would allow users to implem
 ## Detailed design
 
 Add a computed property that splits out `window.location.search` into an object, which could have deeply nested objects and arrays.
-The computed property must contain a dependent key on the route path, as the same queury parame may be used differently on different routes.
+The computed property must contain a dependent key on the route path, as the same query param may be used differently on different routes.
 The computed property must return an object containing computed properties for allowing behavior bound to the value of a query param.
 
 Ensure that setting any deeply nested value in the query params object computed property also updates the URL.
