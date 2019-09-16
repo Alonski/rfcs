@@ -1,18 +1,17 @@
 - Start Date: (fill me in with today's date, YYYY-MM-DD)
-- Relevant Team(s): (fill this in with the [team(s)](README.md#relevant-teams) to which this RFC applies)
+- Relevant Team(s): [Ember CLI]
 - RFC PR: (after opening the RFC PR, update this with a link to it and update the file name)
 - Tracking: (leave this empty)
 
-# <RFC title>
+# Addon Install Dependencies vs DevDependencies
 
 ## Summary
 
-> One paragraph explanation of the feature.
+> Installing an Ember Addon inside of an Ember Addon should prompt the user whether they want to install the new addon as a dependency or a devDependency.
 
 ## Motivation
 
-> Why are we doing this? What use cases does it support? What is the expected
-outcome?
+> Many addons provide features that only work inside consuming apps when they are installed as dependencies and not devDependencies. This can cause hard to debug issues where a component, helper etc works in the addon but not in the consuming app.
 
 ## Detailed design
 
